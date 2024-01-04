@@ -1,10 +1,10 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
+        // Basic Plan
+
+        // Ask the user how much money they made this week
+        // Ask the user to add expenses || Name of expense and cost || Keep repeating until users done
+        // Tell the user how much they should save, and how much they should keep for spending money
     }
 }
