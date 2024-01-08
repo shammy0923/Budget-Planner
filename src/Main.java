@@ -26,6 +26,26 @@ public class Main {
 
         System.out.println("You will need to save $" + Projected_Monthly_Amount + " a month or $" + Projected_Weekly_Amount + " a week.");
 
+        boolean Running = true;
+
+        while (Running) {
+            System.out.println("\nWhat would you like to do?");
+            System.out.println("\n0 - Exit Application");
+            System.out.println("1 - Add Money");
+            System.out.println("2 - See Current Goal Projections");
+
+            int Option = scanner.nextInt();
+
+            switch (Option) {
+                case 0:
+                    Running = false;
+                    break;
+                case 1:
+                    System.out.println("How much money would you like to add?");
+                    user.addMoney(scanner.nextInt());
+                    break;
+            }
+        }
 
         // Ask the user how much money they made this week
         // Ask the user to add expenses || Name of expense and cost || Keep repeating until users done

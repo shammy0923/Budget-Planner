@@ -4,6 +4,11 @@ public class User {
     public int Planned_Months;
 
     public int Current_Money;
+
+    public void addMoney(int amount) {
+        System.out.println("You have added $" + amount + " to your balance");
+        Current_Money += amount;
+    }
 }
 
 
