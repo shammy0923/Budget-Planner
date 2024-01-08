@@ -21,7 +21,7 @@ public class Main {
         System.out.println("How much do you currently have saved?");
         user.Current_Money = scanner.nextInt();
 
-        int Projected_Monthly_Amount = (user.Goal - user.Current_Money) / user.Planned_Months;
+        int Projected_Monthly_Amount = user.getProjectedMonthlyAmount();
         int Projected_Weekly_Amount = (Projected_Monthly_Amount / 4);
 
         System.out.println("You will need to save $" + Projected_Monthly_Amount + " a month or $" + Projected_Weekly_Amount + " a week.");

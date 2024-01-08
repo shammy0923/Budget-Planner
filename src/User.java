@@ -9,6 +9,10 @@ public class User {
         System.out.println("You have added $" + amount + " to your balance");
         Current_Money += amount;
     }
+
+    public int getProjectedMonthlyAmount() {
+        return (Goal - Current_Money) / Planned_Months;
+    }
 }
 
 
