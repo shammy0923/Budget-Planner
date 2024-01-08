@@ -44,6 +44,10 @@ public class Main {
                     System.out.println("How much money would you like to add?");
                     user.addMoney(scanner.nextInt());
                     break;
+                case 2:
+                    Projected_Monthly_Amount = user.getProjectedMonthlyAmount();
+                    Projected_Weekly_Amount = (Projected_Monthly_Amount / 4);
+                    System.out.println("You will need to save $" + Projected_Monthly_Amount + " a month or $" + Projected_Weekly_Amount + " a week.");
             }
         }
 
