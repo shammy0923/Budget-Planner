@@ -33,6 +33,7 @@ public class Main {
             System.out.println("\n0 - Exit Application");
             System.out.println("1 - Add Money");
             System.out.println("2 - See Current Goal Projections");
+            System.out.println("3 - Budget for Current Week");
 
             int Option = scanner.nextInt();
 
@@ -48,6 +49,8 @@ public class Main {
                     Projected_Monthly_Amount = user.getProjectedMonthlyAmount();
                     Projected_Weekly_Amount = (Projected_Monthly_Amount / 4);
                     System.out.println("You will need to save $" + Projected_Monthly_Amount + " a month or $" + Projected_Weekly_Amount + " a week.");
+                case 3:
+                    user.weeklyBudget();
             }
         }
 
