@@ -14,6 +14,11 @@ public class User {
         Current_Money += amount;
     }
 
+    public void removeMoney(int amount) {
+        System.out.println("You have removed $" + amount + " from your balance");
+        Current_Money -= amount;
+    }
+
     public void weeklyBudget() {
         System.out.println("How much money did you make this week?");
         int moneyForWeek = scanner.nextInt();
