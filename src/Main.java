@@ -34,6 +34,7 @@ public class Main {
             System.out.println("1 - Add Money");
             System.out.println("2 - See Current Goal Projections");
             System.out.println("3 - Budget for Current Week");
+            System.out.println("4 - Remove Money");
 
             int Option = scanner.nextInt();
 
@@ -49,8 +50,14 @@ public class Main {
                     Projected_Monthly_Amount = user.getProjectedMonthlyAmount();
                     Projected_Weekly_Amount = (Projected_Monthly_Amount / 4);
                     System.out.println("You will need to save $" + Projected_Monthly_Amount + " a month or $" + Projected_Weekly_Amount + " a week.");
+                    break;
                 case 3:
                     user.weeklyBudget();
+                    break;
+                case 4:
+                    System.out.println("How much money would you like to remove");
+                    user.removeMoney(scanner.nextInt());
+                    break;
             }
         }
 
